@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+}
+#hero {
+  height: 800px;
+  background-image: url("proffs.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+#hero-content {
+  width: 800px;
+  background-color: rgba(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px #dfdfdf;
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 300px;
+}
+#hero-content h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f4f4f4f7;
+  margin: 0;
+}
+main ul {
+  width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+main li {
+  display: flex;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+main li img {
+  width: 300px;
+  height: 280px;
+  box-shadow: 1px 1px 4px #16d3e4;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.professor {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.action {
+  font-size: 15px;
+  text-align: left;
+}
+.action a {
+  text-decoration: none;
+  padding: 5px;
+  color: #16d3e4;
+  border-radius: 5px;
+}
+.action a:hover {
+  background: #bbedf3;
+}

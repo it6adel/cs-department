@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrected the meta tag for viewport -->
+	<meta charset="UTF-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style/shared.css" />
+	<link rel="stylesheet" href="contact/style.css">
+	<title>report</title>
+	
+<body>
+	<header>
+     
+        <img class="logo" src="images\logo.png" alt="logo" />
+      
+
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="schedule.html">schedule</a></li>
+          <li><a href="professors.html">professors</a></li>
+          <li><a href="lists.html">lists</a></li>
+          <li><a href="report.html">report</a></li>
+        </ul>
+      </nav>
+	</header>
+	
+    <div class="container">
+		<form onsubmit="return confirmSubmission()"> <!-- Moved the event handler to the form's onsubmit attribute -->
+			<h3>REPORT</h3> <!-- Corrected closing tag for h3 -->
+			<input type="text" id="name" placeholder="Nom et Prenom" required>
+			<input type="email" id="email" placeholder="Email address" required>
+			<input type="text" id="phone" placeholder="Numero de Telephone" required>
+			<textarea id="text" rows="4" placeholder="Comment est-ce que nous pouvons vous aider ?"></textarea>
+			<button type="submit">Submit</button> <!-- Removed inline event handler from the button -->
+		</form>
+	</div>
+	</div>
+  <footer>
+      <ul>
+        <li>
+          <a
+            href="https://maps.google.com/maps?ll=36.770637,3.055328&z=13&t=m&hl=en-US&gl=US&mapclient=embed&cid=11753670107331157339"
+            ><img src="icons/location.png" alt="location icon" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@univ-alger.dz"
+            ><img src="icons/email.png" alt="email icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+	<script>
+		// Function to make the button react
+		function confirmSubmission() { 
+			if (confirm("Submitted!")) {
+				window.location.href = "/index.html";
+				return true;
+			} else {
+				alert("Operation cancelled.");
+				return false;
+			}
+		}
+	</script>
+	
+</body>
+
+</html>
